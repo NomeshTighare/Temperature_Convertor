@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="411dp"
+        android:layout_height="141dp"
+        android:background="#00BCD4"
+        android:fontFamily="@font/adamina"
+        android:paddingTop="25dp"
+        android:text="Temperature Converter"
+        android:textAlignment="center"
+        android:textColor="#382677"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/temp"
+        android:layout_width="411dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:fontFamily="@font/adamina"
+        android:hint="Enter Temperature"
+        android:inputType="numberDecimal"
+        android:lineSpacingExtra="12sp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#EF9F29"
+        android:textColorLink="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/show1"
+        android:layout_width="199dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="80dp"
+        android:background="#E3E4E8"
+        android:hint="C - F"
+        android:paddingTop="15dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#382677"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="228dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="94dp"
+        android:backgroundTint="#EF9F29"
+        android:text="converter"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
